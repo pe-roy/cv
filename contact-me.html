@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact-me Page</title>
+  <style media="screen">
+    form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+}
+  </style>
+</head>
+
+<body style="font-family:verdana">
+  <h1>Paulo Royer</h1>
+  <h4>Republica Islâmica do Irã, 481, Jardim das Américas</h4>
+  <h4>Curitiba - PR</h4>
+  <h4><em>paulo.royer@abarlavento.com</em></h4>
+  <h4>+55-71-991-360-997</h4>
+  <a href="index.html">Go to Home Page</a>
+  <br>
+  <a href="hobbies.html">My Hobbies page</a>
+  <form class="" action="mailto:paulo.royer@abarlavento.com" method="post" enctype="text/plain">
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+      </li>
+      <li>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_email">
+      </li>
+      <li>
+        <label for="number">Phone Number:</label>
+        <input type="number" name="user_phone">
+      </li>
+      <li>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </li>
+      <li class="button">
+        <button type="submit">Send-me your message</button>
+      </li>
+    </ul>
+  </form>
+</body>
+
+</html>
